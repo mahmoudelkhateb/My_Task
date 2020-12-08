@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>New project</title>
+</head>
+
+<body>
+    <div  id="bebo-app">
+        <div class="welcome p-5 text-white text-center">
+            <div class="container">
+                <div class="welcome-content">
+                    <h1 class="text-uppercase">Welcome to My Task</h1>
+                    <p>My Name is Mahmoud Elkhateb and I'm a Front-End Developer.
+                        <br>I have been working for 3 years in this field with myself and have many projects.
+                        I hope that you like the Task <br> Welcome Sir....
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="port" class="about-us p-5">
+            <div class="container">
+                <h2 class="h1">About Us</h2>
+                <p>We are an online course site offering the best courses and accredited
+                    certificates at the best
+                    possible prices to choose the course you want and subscribe now </p>
+                <ul class="bebo">
+                    <li class="active filter" data-filter="all">All</li>
+                    <li class="filter" data-filter=".jquery">JQuery</li>
+                    <li class="filter" data-filter=".angular">Angular</li>
+                    <li class="filter" data-filter=".php">Php & MySql</li>
+                    <li class="filter" data-filter=".vue">Vue</li>
+                </ul>
+                <div id="container" class="gallery">
+                    <div class="holder">
+                        <div class="mix jquery">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 456</span>
+                            <img src="img/proj1.png" alt="1" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix angular">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"> </i> 216</span>
+                            <img src="img/proj2.jpg" alt="1" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix php">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"> </i> 136</span>
+                            <img src="img/proj3.jpg" alt="1" style="width: 100%;height: 100%;" />
+                        </div>
+                    </div>
+                    <div class="holder">
+                        <div class="mix php">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 294</span>
+                            <img src=img/proj4.jpg alt="4" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix jquery">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 147</span>
+                            <img src=img/proj5.jpg alt="5" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix angular">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 170</span>
+                            <img src=img/proj6.jpg alt="1" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix vue">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 170</span>
+                            <img src=img/vue.jpeg alt="vue" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix vue">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 170</span>
+                            <img src=img/vue2.jpg alt="1" style="width: 100%;height: 100%;" />
+                        </div>
+                        <div class="mix vue">
+                            <div class="over">View More</div>
+                            <span><i class="fa fa-heart"></i> 170</span>
+                            <img src=img/vue3.jpg alt="1" style="width: 100%;height: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end about us-->
+        <!--start Testimonials-->
+        <div class="Testimonials text-center p-5">
+            <div class="container">
+                <h2 class="h1  text-uppercase">What Our Students Say </h2>
+                <button class="btn">Go to Your Form <i class="fas fa-arrow-down"></i></button>
+                <div class="row">
+                    <div id="bebo-app">
+                        <div class="col-md testi-content"></div>
+                    </div>
+                </div>
+            </div>
+            <!--end Testimonials-->
+        </div>
+        <!--start our-form-->
+        <div class="our-form p-5 text-center">
+            <div class="container">
+                <h2 class="h1">Validate Your Message</h2>
+                <p>Please, Your Message Must be More Than 20 Chars.</p>
+                <form action="https://www.facebook.com/mahmoud.elkhateb.89/" method="POST" class="form-group forming"
+                    @submit="validateText">
+                    <div class="error-div" v-for="error in formErrors">{{error}}</div>
+                    <input class="form-control" type="text" placeholder="Enter Your Name">
+                    <input class="form-control" type="text" placeholder="Phone">
+                    <input class="form-control" type="email" placeholder="e-mail">
+                    <textarea placeholder="Type Your Message" class="form-control" v-model="message"></textarea>
+                    <input class="form-control button" type="submit" value="send">
+                </form>
+            </div>
+        </div>
+        <!--end our-form-->
+        <!--start scroll to top -->
+        <div id="scroll-top">
+            <i class="fa fa-chevron-up fa-2x"></i>
+        </div>
+        <!--end scroll to top -->
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
